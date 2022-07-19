@@ -49,12 +49,12 @@ nav a:hover{
      background-color: white;
      color: black;
 }
-button{
+.boton{
      box-shadow: 3px 3px 10px black;
 }
-button:hover{
-     background-color: black;
-     color: white;
+.copas a:hover{
+     background-color: rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
      box-shadow: none;
 }
 .contenedor{
@@ -80,6 +80,12 @@ button:hover{
      margin-left: auto;
      margin-right: auto;
 }
+#inicio .logo{
+     width: 40vh;
+     margin-left: auto;
+     margin-right: auto;
+     padding-right: 10%;
+}
 .contenedor h2{
      color: rgb(255, 255, 255);
      font-size: 4rem;
@@ -99,7 +105,7 @@ button:hover{
      border-radius: 10px;
      width: 80%;
      height: calc(80%/3);
-     color: rgb(0, 0, 0);
+     color: rgb(255, 255, 255);
      box-shadow: 5px 5px 10px black;
      display: flex;
      flex-direction: column;
@@ -107,25 +113,35 @@ button:hover{
      align-items: center;
 }
 .copas div:nth-child(1){
-     background-image: url(../img/guinever-min.jpg); 
+     background-image: linear-gradient(
+          0deg, rgba(0,0,0,0.3),
+          rgba(0,0,0,0.3)
+     ), url(../img/guinever-min.jpg); 
      background-size: cover;
 }
 .copas div:nth-child(2){
-     background-image: url(../img/lesley-min.jpg);
+     background-image:linear-gradient(
+          0deg, rgba(0,0,0,0.3),
+          rgba(0,0,0,0.3)
+     ), url(../img/lesley-min.jpg);
      background-size: cover;
 }
 .copas div:nth-child(3){
-     background-image: url(../img/miya-min.jpg);
+     background-image:linear-gradient(
+          0deg, rgba(0,0,0,0.3),
+          rgba(0,0,0,0.3)
+     ), url(../img/miya-min.jpg);
      background-size: cover;
 }
 .copas p{
      display: none;
 }
-.copas button{
+.copas .boton{
+     background-color: rgb(255, 255, 255);
+     color: rgb(0, 0, 0);
      font-weight: bold;
      font-size: 0.5em;
      border-radius: 10px;
-     border: 0px;
      width: 60%;
 }
 #Eventos .contenedor{
@@ -152,4 +168,33 @@ footer p{
      margin: 0;
      font-size: 2rem;
      background-color: rgb(71, 71, 71);
+}
+@media screen and (min-width:720px) {
+     header{
+          flex-direction: row;
+          justify-content: space-between;
+          position: fixed;
+          width: 100%;
+          box-shadow: 0 5px 10px rgb(0, 0, 0);
+     }
+     header nav{
+          flex-direction: row;
+     }
+     header h1{
+          align-content: flex-start;
+     }
+     nav a{
+          padding: 0 10px;
+          border: 0;
+          margin: 0;
+     }
+     .copas div {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+     }
+     .copas p{
+          display: block;
+          width: 60%;
+     }
 }
