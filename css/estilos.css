@@ -71,7 +71,7 @@ button:hover{
           0deg,
           rgba(0,0,0,0.5),
           rgba(0,0,0,0.5)
-     ), url(../img/wan.jpg);
+     ), url(../img/wan-min.jpg);
      background-position: center;
      background-size: cover;
 }
@@ -107,15 +107,15 @@ button:hover{
      align-items: center;
 }
 .copas div:nth-child(1){
-     background-image: url(../img/guinever.jpg); 
+     background-image: url(../img/guinever-min.jpg); 
      background-size: cover;
 }
 .copas div:nth-child(2){
-     background-image: url(../img/lesley.jpg);
+     background-image: url(../img/lesley-min.jpg);
      background-size: cover;
 }
 .copas div:nth-child(3){
-     background-image: url(../img/miya.jpg);
+     background-image: url(../img/miya-min.jpg);
      background-size: cover;
 }
 .copas p{
