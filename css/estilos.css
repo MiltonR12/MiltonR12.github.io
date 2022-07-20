@@ -182,6 +182,7 @@ footer p{
      }
      header h1{
           align-content: flex-start;
+          margin-left: 20px;
      }
      nav a{
           padding: 0 10px;
