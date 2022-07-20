@@ -4,6 +4,7 @@ html{
 }
 *{
      box-sizing: content-box;
+     font-family: Arial, Helvetica, sans-serif;
 }
 body{
      margin: 0;
@@ -93,7 +94,7 @@ nav a:hover{
 #torneos .contenedor{
      background-color: lightsteelblue;
 }
-#torneos .copas{
+.copas{
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -169,8 +170,9 @@ footer p{
      font-size: 2rem;
      background-color: rgb(71, 71, 71);
 }
-@media screen and (min-width:720px) {
+@media screen and (min-width:1000px) {
      header{
+          display: flex;
           flex-direction: row;
           justify-content: space-between;
           position: fixed;
@@ -184,18 +186,32 @@ footer p{
           align-content: flex-start;
           margin-left: 20px;
      }
+     nav{
+          align-items: center;
+     }
      nav a{
           padding: 0 10px;
           border: 0;
           margin: 0;
      }
-     .copas div {
+     .copas{
           display: flex;
           flex-direction: row;
-          justify-content: flex-start;
+          margin-left: auto;
+          margin-right: auto;
+     }
+     .copas div{
+          margin: 0 20px;
+          height: 80vh;
+          background-position: center center;
+          align-content: center;
      }
      .copas p{
           display: block;
-          width: 60%;
+          margin: 20px 5px;
+          font-size: 1em;
+     }
+     .copas .boton{
+          padding: 10px;
      }
 }
