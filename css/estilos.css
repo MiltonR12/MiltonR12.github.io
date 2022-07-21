@@ -113,21 +113,21 @@ nav a:hover{
      justify-content: center;
      align-items: center;
 }
-.copas div:nth-child(1){
+.torneo-5{
      background-image: linear-gradient(
           0deg, rgba(0,0,0,0.3),
           rgba(0,0,0,0.3)
      ), url(../img/guinever-min.jpg); 
      background-size: cover;
 }
-.copas div:nth-child(2){
+.torneo-3{
      background-image:linear-gradient(
           0deg, rgba(0,0,0,0.3),
           rgba(0,0,0,0.3)
      ), url(../img/lesley-min.jpg);
      background-size: cover;
 }
-.copas div:nth-child(3){
+.torneo-1{
      background-image:linear-gradient(
           0deg, rgba(0,0,0,0.3),
           rgba(0,0,0,0.3)
