@@ -76,6 +76,7 @@ h2{
 .carta{
      box-shadow: 5px 5px 10px black;
      margin: 10px;
+     padding: 5px;
      background-color: #ca0028;
      border-radius: 10px;
 }
