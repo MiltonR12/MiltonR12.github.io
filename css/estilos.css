@@ -110,6 +110,13 @@ h2{
 #fotos p{
      margin: 10px;
 }
+.cuadro{
+     color: #ca0028;
+     padding: 15px;
+}
+.cuadro a{
+     color: #e1002a;
+}
 footer{
      background-color: #e1002a;
      padding: 5px;
