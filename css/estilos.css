@@ -63,7 +63,21 @@ h2{
 }
 .bob{
      width: 50%;
+     animation: grande 2s infinite;
 }
+
+@keyframes grande {
+     0%{
+          transform: scale(0.5);
+     }
+     50%{
+          transform: scale(1);
+     }
+     100%{
+          transform: scale(0.5);
+     }
+}
+
 #sorpresa .contenedor{
      background-color: #e1002a;
      display: flex;
