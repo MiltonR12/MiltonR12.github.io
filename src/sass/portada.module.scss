@@ -1,0 +1,120 @@
+.cuerpoPortada {
+  width: 100%;
+  height: 800px;
+  margin-top: 100px;
+  display: flex;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(11, 19, 43, 1) 50%
+  );
+  .contPresentacion {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      color: #fff;
+      font-size: 70px;
+      margin-bottom: 20px;
+      span {
+        color: #6fffe9;
+      }
+    }
+    h3 {
+      color: #9afff0;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .boton {
+      width: 250px;
+      height: 60px;
+      position: relative;
+      display: flex;
+      border: none;
+      padding: 5px;
+      border-radius: 10px;
+      background-color: #0b132b;
+      overflow: hidden;
+      .text {
+        width: 100%;
+        height: 100%;
+        color: #6fffe9;
+        background-color:  #0b132b;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        transition: all ease .5s;
+        border-radius: 10px;
+      }
+    }
+    .boton::before {
+      content: "";
+      width: 200%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: -50%;
+      background: rgb(11, 19, 43);
+      background: linear-gradient(
+        0deg,
+        rgba(11, 19, 43, 1) 40%,
+        rgba(111, 255, 233, 1) 40%,
+        rgba(93, 214, 200, 1) 70%,
+        rgba(11, 19, 43, 1) 70%
+      );
+      animation: girar infinite linear 3s;
+    }
+    .boton:hover {
+      .text {
+        background-color: #6fffe9;
+        color: #0b132b;
+      }
+    }
+  }
+  .photo {
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .imgFoto {
+      width: 100%;
+    }
+  }
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .cuerpoPortada {
+    margin: 0;
+    height: 100vh;
+    .contPresentacion {
+      width: 100%;
+      text-align: center;
+      h1 {
+        font-size: 2.5rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+    .photo {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.cuerpoContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color: #0B132B;
+  h1 {
+    color: #5BC0BE;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .cuerpoContacto {
+    padding: 50px 10px;
+    text-align: center;
+  }
+}
